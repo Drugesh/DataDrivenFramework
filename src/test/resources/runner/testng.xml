@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+<listener class-name="com.dj.listners.CustomListners"></listener>
+</listeners>
+  <test name="Test1">
+    <classes>
+      <class name="com.dj.test.LoginTest"/>
+      </classes>
+      </test>
+      <test name="Test2">
+       <classes>
+      <class name="com.dj.test.AddCustomerTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
